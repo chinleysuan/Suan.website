@@ -7,27 +7,154 @@
     <title> My Website </title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <style>
-      .bg-custom {
-        background-color: #F2EED7;
+      body {
+        background-image:url(blackkk.webp);
+        background-size: cover; 
       }
       .header-text {
         text-align: center;
         color: #333;
       }
+
+      /* Custom Styles */
+        .navbar-brand {
+            font-family: 'Cursive', sans-serif;
+            font-size: 1.8rem;
+            color:#543A14;
+        }
+        .navbar-nav {
+            margin: auto; /* Center navigation links */
+        }
+        .navbar-nav .nav-link {
+            color:#bc8660;
+            font-weight: 500;
+            font-size: 1rem;
+            margin: 0 10px;
+        }
+        .navbar-nav .nav-link:hover {
+            text-decoration: underline;
+            color: #c8e0e4; /* Light teal color */
+        }
+        .navbar-header {
+            text-align: center;
+            color: white;
+            font-family: 'Cursive', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+  
+
+        .header-container {
+            display: flex;
+            align-items: center; /* Vertically align text and image */
+            justify-content: space-between; /* Text on the left, image on the right */
+            padding: 50px;
+            color: grey;
+            height: 100vh; /* Full viewport height */
+        }
+
+        /* Styling for the text section */
+        .header-text {
+            flex: 1; /* Allow text to take up the left space */
+            max-width: 50%; /* Limit width of the text area */
+        }
+
+        .header-text h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color:#bc8660;
+        }
+
+        .header-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: grey;
+        }
+
+        .header-text h4 {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: grey;
+
+        }
+
+        .header-text button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            color: grey;
+
+        }
+
+        /* Styling for the image section */
+        .header-image {
+            flex: 1; /* Allow image to take up the right space */
+            display: flex; /* Align image properly */
+            justify-content: flex-end; /* Push the image to the far right */
+        }
+
+        .header-image img {
+            width: 80%; /* Adjust the width of the image */
+            max-width: 400px; /* Maximum image size */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Circular shape */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .about-image {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Push the image to the far left */
+    align-items: center; /* Center the image vertically if necessary */
+}
+
+/* Styling for the image inside the container */
+.about-image img {
+    width: 80%; /* Adjust the width of the image */
+    max-width: 900px; /* Maximum image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular shape */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+        /* Facebook Icon */
+ion-icon[name="logo-facebook"] {
+  color:#bc8660;
+}
+
+/* Instagram Icon */
+ion-icon[name="logo-instagram"] {
+  color:#bc8660;
+}
+
+/* Twitter Icon */
+ion-icon[name="logo-twitter"] {
+  color:#bc8660;
+}
+
+/* YouTube Icon */
+ion-icon[name="logo-youtube"] {
+  color:#bc8660;
+}
+
+/* LinkedIn Icon */
+ion-icon[name="logo-linkedin"] {
+  color:#bc8660;
+}
+
+/* Snapchat Icon */
+ion-icon[name="logo-snapchat"] {
+  color:#bc8660;
+}
+
     </style>
   </head>
   <body>
     <section id="home" class="py-5">
     <div class="bg-custom vh-100 d-flex flex-column">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="cute logo.png" alt="Logo" class="rounded-circle" style="height: 70px" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <a class="navbar-brand" href="index.html">Chinley A. Suan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
     
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -50,15 +177,23 @@
           </div>
         </div>
       </nav>
-    
-        <div class="container">
-      <div class="header-text">
-        <img src="Chinley.png" class="rounded mb-4" alt="Cinque Terre" width="500" height="300">
-        <p> Creative Designer</p>
-        <h1> Hello, I'm Chinley A. Suan</h1>
-        <h3> 안녕하세요, 내 Webiste에 오신 것을 환영합니다</h3>
-        <h4> Web Designer and developer from Philippines.<br> I create <br> websites to help businesses do better <br> online </h4>
-        <button type="button" class="btn btn-outline-success mt-4">Hire Me!</button>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+      <div class="container-fluid header-container">
+        <!-- Left Side (Text) -->
+        <div class="header-text">
+            <p>Creative Designer</p>
+            <h1>Hello, I'm Chinley A. Suan</h1>
+            <h3>안녕하세요, 내 Webiste에 오신 것을 환영합니다</h3>
+            <h4>Web Designer and developer from Philippines.<br> I create websites to help businesses do better online.</h4>
+            <button type="button" class="btn btn-outline-secondary mt-4">Hire Me!</button>
+        </div>
+
+        <!-- Right Side (Image) -->
+        <div class="header-image">
+            <img src="dingg.jpg" alt="Chinley A. Suan">
+        </div>
+    </div>
    
          <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js "></script>
     </div>
@@ -66,29 +201,26 @@
  </div>
 </section>
 
- <style>
-    .bg-custom2 {
-        background-color: #798645; 
-    }
-    .bg-custom3 {
-        background-color: #FEFAE0; 
-    }
-
-</style>
+ 
 <div class="bg-custom2 vh-100">
 <section id="about" class="py-5">
     <div class="container">
     <div class="row">
        
         <div class="col">
-            <p style="color: wheat; font-size: 22px; text-align:left;">About Me</p>
+            <p style="color:#bc8660; font-size: 22px; text-align:left;">About Me</p>
             <h2 class="elementor-heading-title elementor-size-default">Call Me Chinley</h2>    
+            <div class="about-image">
+              <img src="dingdong.jpg" alt="Chinley A. Suan">
+          </div>
         </div>
     
         
         <div class="col">
-          <p>As a passionate web developer and designer, I thrive on creating visually engaging and user-friendly websites that bring ideas to life. With a strong foundation in HTML, CSS, and JavaScript, I specialize in crafting responsive designs that ensure seamless experiences across all devices. My keen eye for aesthetics, combined with a deep understanding of user experience principles, allows me to transform complex concepts into intuitive interfaces. I am constantly exploring the latest technologies and design trends to enhance my skills and deliver innovative solutions that meet the needs of my clients."</p>    
-        </div>
+          <p class="text-muted">
+              As a passionate web developer and designer, I thrive on creating visually engaging and user-friendly websites that bring ideas to life. With a strong foundation in HTML, CSS, and JavaScript, I specialize in crafting responsive designs that ensure seamless experiences across all devices. My keen eye for aesthetics, combined with a deep understanding of user experience principles, allows me to transform complex concepts into intuitive interfaces. I am constantly exploring the latest technologies and design trends to enhance my skills and deliver innovative solutions that meet the needs of my clients.
+          </p>    
+      </div>
     
       
         <div class="col">
@@ -127,53 +259,66 @@
 
 <!--SERVICES-->
 <section id="services" class="py-5">
-    <div class="bg-custom3 vh-30">
-    <section id="services" class="py-5">
-        <div class="container ">
-            <p style="color:  rgb(63, 114, 63); font-size: 100px; text-align: center;">Services </p>
-    <div class="row mb-4"> 
-      <div class="row text-center">
-        <div class="col-md-6 py-5">
-            <h2>15+</h2>
-            <p style="color: rgb(63, 114, 63); font-size: 40px;">Years of Experience</p>
-        </div>
-        <div class="col-md-6 py-5">
-            <h2>408+</h2>
-            <p style="color: rgb(63, 114, 63); font-size: 40px;">Happy Clients</p>
-        </div>
-    </div>
+  <div class="bg-custom3 vh-30">
+      <section id="services" class="py-5">
+          <div class="container">
+            <p style="color:#bc8660; font-size: 100px; text-align: center; font-weight: bold;">Services</p>
+              <div class="row mb-4 d-flex justify-content-center">
+                  <!-- First row of boxes -->
+                  <div class="col-md-6 py-5 d-flex justify-content-center">
+                      <div class="border p-4 shadow-sm text-center w-100">
+                        <h2 class="text-muted">15+</h2>
+                          <p style="color:#543A14; font-size: 40px;">Years of Experience</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 py-5 d-flex justify-content-center">
+                      <div class="border p-4 shadow-sm text-center w-100">
+                        <h2 class="text-muted">408+</h2>
+                          <p style="color:#543A14; font-size: 40px;">Happy Clients</p>
+                      </div>
+                  </div>
+              </div>
 
-    <div class="row text-center">
-        <div class="col-md-6 py-5">
-            <h2>998+</h2>
-            <p style="color: rgb(63, 114, 63); font-size: 40px;">Projects Completed</p>
-        </div>
-        <div class="col-md-6 py-5">
-            <h2>159+</h2>
-            <p style="color: rgb(63, 114, 63); font-size: 40px;">Award Won</p>
-        </div>
-    </div>
-</div>
+              <div class="row text-center d-flex justify-content-center">
+                  <!-- Second row of boxes -->
+                  <div class="col-md-6 py-5 d-flex justify-content-center">
+                      <div class="border p-4 shadow-sm text-center w-100">
+                        <h2 class="text-muted">998+</h2>
+                          <p style="color:#543A14; font-size: 40px;">Projects Completed</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 py-5 d-flex justify-content-center">
+                      <div class="border p-4 shadow-sm text-center w-100">
+                        <h2 class="text-muted">159+</h2>
+                          <p style="color:#543A14; font-size: 40px;">Award Won</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+</section>
+
 
 <!--ACTIVITIES-->
 <section id="activities" class="py-5">
-  <p style="color:  rgb(63, 114, 63); font-size: 100px; text-align: center;">Activities </p>
+  <p style="color:#bc8660; font-size: 100px; text-align:left; font-weight: bold;">Activities </p>
 <div class="row d-flex">
   <div class="col p-4" class="card" style="width: 20rem; border-radius: 20px;">
       <img class="card-img-top" src="ecommerce.png" alt="Features">
-      <div class="card-body" style="background-color:  #798645;">
+      <div class="card-body" style="background-color:#543A14;">
           <h5 class="card-title">E - commerce</h5>
           <p class="card-text">Midterm Exam</p>
-          <a href="Ecommerce.html" class="btn btn-primary">View</a>
+          <a href="Ecommerce.html" class="btn btn-secondary">View</a>
       </div>
   </div>
 
 <div class="col p-4" class="card" style="width: 20rem;">
   <img class="card-img-top" src="weatherrr.png" alt="Features">
-  <div class="card-body" style="background-color: #798645;"">
+  <div class="card-body" style="background-color: #543A14;">
       <h5 class="card-title">Weather Update</h5>
       <p class="card-text">Prelim Activity</p>
-      <a href="Weather.html" class="btn btn-primary">View</a>
+      <a href="Weather.html" class="btn btn-secondary">View</a>
   </div>
 </div>
 </section>
