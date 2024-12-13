@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title> My Website </title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    
     <style>
       body {
         background-image:url(blackkk.webp);
@@ -23,7 +24,7 @@
             color:#543A14;
         }
         .navbar-nav {
-            margin: auto; /* Center navigation links */
+            margin: auto; 
         }
         .navbar-nav .nav-link {
             color:#bc8660;
@@ -33,7 +34,7 @@
         }
         .navbar-nav .nav-link:hover {
             text-decoration: underline;
-            color: #c8e0e4; /* Light teal color */
+            color: #c8e0e4;
         }
         .navbar-header {
             text-align: center;
@@ -47,17 +48,17 @@
 
         .header-container {
             display: flex;
-            align-items: center; /* Vertically align text and image */
-            justify-content: space-between; /* Text on the left, image on the right */
+            align-items: center; 
+            justify-content: space-between;
             padding: 50px;
             color: grey;
-            height: 100vh; /* Full viewport height */
+            height: 100vh; 
         }
 
-        /* Styling for the text section */
+       
         .header-text {
-            flex: 1; /* Allow text to take up the left space */
-            max-width: 50%; /* Limit width of the text area */
+            flex: 1; 
+            max-width: 50%; 
         }
 
         .header-text h1 {
@@ -86,32 +87,32 @@
 
         }
 
-        /* Styling for the image section */
+       
         .header-image {
-            flex: 1; /* Allow image to take up the right space */
-            display: flex; /* Align image properly */
-            justify-content: flex-end; /* Push the image to the far right */
+            flex: 1; 
+            display: flex;
+            justify-content: flex-end; 
         }
 
         .header-image img {
-            width: 80%; /* Adjust the width of the image */
-            max-width: 400px; /* Maximum image size */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 50%; /* Circular shape */
+            width: 80%; 
+            max-width: 400px; 
+            height: auto; 
+            border-radius: 50%; 
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
         .about-image {
-    display: flex; /* Use flexbox for layout */
-    justify-content: flex-start; /* Push the image to the far left */
-    align-items: center; /* Center the image vertically if necessary */
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center;
 }
 
-/* Styling for the image inside the container */
+
 .about-image img {
-    width: 80%; /* Adjust the width of the image */
-    max-width: 900px; /* Maximum image size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Circular shape */
+    width: 80%;
+    max-width: 900px; 
+    height: auto; 
+    border-radius: 50%; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
         /* Facebook Icon */
@@ -144,9 +145,33 @@ ion-icon[name="logo-snapchat"] {
   color:#bc8660;
 }
 
+.progress {
+      height: 10px;
+      background-color: #333;
+    }
+
+    .progress-bar {
+      background-color: #ffae42;
+      width: 0;
+      transition: width 2s ease-in-out;
+    }
+
+    .skill-title {
+      font-size: 1.2rem;
+    }
+
+    .skills-section {
+      margin-top: 50px;
+    }
+
+    .skill-row {
+      margin-bottom: 20px;
+    }
+
     </style>
   </head>
   <body>
+  <!--Home-->
     <section id="home" class="py-5">
     <div class="bg-custom vh-100 d-flex flex-column">
       <nav class="navbar navbar-expand-lg">
@@ -162,16 +187,22 @@ ion-icon[name="logo-snapchat"] {
                 <a class="nav-link" href="#home">HOME</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#service">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">SKILLS</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#about">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services">SERVICES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
+                <a class="nav-link" href="#achievement">ACHIEVEMENT</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#activities">ACTIVITIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -201,12 +232,134 @@ ion-icon[name="logo-snapchat"] {
  </div>
 </section>
 
- 
+<!--Services-->
+<div class="bg-custom2 vh-100">
+  <section id="service" class="py-5">
+    <div class="container">
+      <p class="text-center text-decoration-underline" style="color:#bc8660; font-size: 40px;">"At Your Service"</p>
+      <div class="row text-center gy-4 align-items-stretch"> 
+      
+        <div class="col-md-3 d-flex flex-column service-item">
+          <img src="poo-solid (2).svg" alt="poo" class="img-fluid mb-3 mx-auto" style="width: 70px;"> 
+          <h2 class="text-muted fw-bold">Sturdy Themes</h2>
+          <p style="color:#543A14;">Our themes are updated regularly to keep them bug-free!</p>
+        </div>
+
+        <div class="col-md-3 d-flex flex-column service-item">
+          <img src="bug-solid.svg" alt="ghost" class="img-fluid mb-3 mx-auto" style="width: 70px;"> 
+          <h2 class="text-muted fw-bold">Ready to Publish</h2>
+          <p style="color:#543A14;">You can use this design as is, or you can make changes!</p>
+        </div>
+
+        <div class="col-md-3 d-flex flex-column service-item">
+          <img src="globe-solid.svg" alt="globe" class="img-fluid mb-3 mx-auto" style="width: 70px;"> 
+          <h2 class="text-muted fw-bold">Global Reach</h2>
+          <p style="color:#543A14;">Reach a wider audience with our themes!</p>
+        </div>
+
+        <div class="col-md-3 d-flex flex-column service-item">
+          <img src="heart-regular.svg" alt="heart" class="img-fluid mb-3 mx-auto" style="width: 70px;"> 
+          <h2 class="text-muted fw-bold">Made with Love</h2>
+          <p style="color:#543A14;">Is it really open source if it's not made with love?</p>
+        </div>
+
+      </div>
+    </div>
+
+<!--Skills-->
+<div class="bg-custom2 vh-100">
+  <section id="skills" class="py-5">
+    <div class="container skills-section text-center">
+      <h1 class="fw-bold" style="color:#bc8660;"">My Skills</h1>
+      <p class="text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+      
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <div class="skill-row d-flex justify-content-between align-items-center">
+            <span class="skill-title" style="color: #543A14;">PHP</span>
+            <span>90%</span>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar" data-percentage="90"></div>
+          </div>
+  
+          <div class="skill-row d-flex justify-content-between align-items-center">
+            <span class="skill-title" style="color: #543A14;">HTML5</span>
+            <span>95%</span>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar" data-percentage="95"></div>
+          </div>
+  
+          <div class="skill-row d-flex justify-content-between align-items-center">
+            <span class="skill-title" style="color: #543A14;">WordPress</span>
+            <span>70%</span>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar" data-percentage="70"></div>
+          </div>
+        </div>
+  
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <div class="skill-row d-flex justify-content-between align-items-center">
+            <span class="skill-title" style="color: #543A14;">jQuery</span>
+            <span>85%</span>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar" data-percentage="85"></div>
+          </div>
+  
+          <div class="skill-row d-flex justify-content-between align-items-center">
+            <span class="skill-title" style="color: #543A14;">CSS3</span>
+            <span>90%</span>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar" data-percentage="90"></div>
+          </div>
+  
+          <div class="skill-row d-flex justify-content-between align-items-center">
+            <span class="skill-title" style="color: #543A14;">SEO</span>
+            <span>80%</span>
+          </div>
+          <div class="progress mb-4">
+            <div class="progress-bar" data-percentage="80"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      const animateProgressBars = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const progressBar = entry.target;
+            const percentage = progressBar.getAttribute('data-percentage');
+            progressBar.style.width = `${percentage}%`;
+            observer.unobserve(progressBar); 
+          }
+        });
+      };
+  
+    
+      const observer = new IntersectionObserver(animateProgressBars, {
+        threshold: 0.5 
+      });
+  
+      
+      document.querySelectorAll('.progress-bar').forEach(bar => {
+        observer.observe(bar);
+      });
+    </script>
+    </section>
+
+<!--About-->
 <div class="bg-custom2 vh-100">
 <section id="about" class="py-5">
     <div class="container">
     <div class="row">
-       
+  
         <div class="col">
             <p style="color:#bc8660; font-size: 22px; text-align:left;">About Me</p>
             <h2 class="elementor-heading-title elementor-size-default">Call Me Chinley</h2>    
@@ -224,7 +377,7 @@ ion-icon[name="logo-snapchat"] {
     
       
         <div class="col">
-            <div class="row">
+          <div class="row justify-content-center align-items-center">
               
                 <div class="col-4 text-center">
                     <a href="https://www.facebook.com/profile.php?id=100053091983353" class="d-block mb-3">
@@ -257,12 +410,12 @@ ion-icon[name="logo-snapchat"] {
     </div>
   </section>
 
-<!--SERVICES-->
-<section id="services" class="py-5">
+<!--ACHIEVEMENT-->
+<section id="achievement" class="py-5">
   <div class="bg-custom3 vh-30">
-      <section id="services" class="py-5">
+      <section id="achievement" class="py-5">
           <div class="container">
-            <p style="color:#bc8660; font-size: 100px; text-align: center; font-weight: bold;">Services</p>
+            <p style="color:#bc8660; font-size: 100px; text-align: center; font-weight: bold;">Achievement</p>
               <div class="row mb-4 d-flex justify-content-center">
                   <!-- First row of boxes -->
                   <div class="col-md-6 py-5 d-flex justify-content-center">
@@ -322,6 +475,9 @@ ion-icon[name="logo-snapchat"] {
   </div>
 </div>
 </section>
+
+
+
 
 </body>
 
